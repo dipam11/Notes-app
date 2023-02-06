@@ -26,7 +26,6 @@ const Update = ({ data }) => {
 
   const handleSubmit = () => {
     update(ref(db, `/notes/${noteId.id}`), {
-      // id: noteId.id,
       title: element.title,
       description: element.description,
     });

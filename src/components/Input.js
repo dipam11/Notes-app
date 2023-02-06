@@ -30,7 +30,6 @@ const Input = (props) => {
 
   const postData = (e) => {
     e.preventDefault();
-    // if ((title.length <= 10 && !description) ||(title.length > 10 && description)) {
     if (!title || !description) {
       alert("Please provide valid inputs.");
     } else {
@@ -66,9 +65,9 @@ const Input = (props) => {
             <textarea
               type="text"
               name="description"
-              maxLength={50}
+              maxLength={70}
               rows={3}
-              placeholder="Describe in 50 charachters.."
+              placeholder="Describe in 70 charachters.."
               value={data.description}
               onChange={getData}
             />
